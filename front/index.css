@@ -1,0 +1,24 @@
+html, body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#messages {
+    height: 400px;
+    background: white;
+    color: black;
+    overflow: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#form {
+    width: 100%;
+}
+
+#chat {
+    width: 60%;
+    margin-left: 20%;
+    padding: 5px;
+    border: 1px solid black;
+}

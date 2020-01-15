@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <script src="./chat.js"></script>
+    <script src="./socket.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <form id="join-chat" onsubmit="joinChat(); return false;">
+        <input type="text" id="nick" />
+        <button type="submit">Join chat</button>
+    </form>
+    <div id="chat" style="display:none;">
+        <div id="messages"></div>
+        <form id="form" onsubmit="submitForm(); return false" name="form">
+            <input type="text" id="text-input" />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
